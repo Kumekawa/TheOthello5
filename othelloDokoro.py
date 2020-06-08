@@ -20,6 +20,9 @@ class OthelloDokoro(ol.Field):
         self.p1.communicate("setcolor b")
         self.p2.communicate("setcolor w")
 
+        self.p1.communicate("gamestart")
+        self.p1.communicate("gamestart")
+        
         turnCount = 0
 
         #ターンプレイヤーに従って、決着がつくまで対局させる

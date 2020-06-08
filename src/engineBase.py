@@ -15,6 +15,8 @@ class OthelloEngine(ol.Field):
                 self.SOP()
             elif(s[0] == "setcolor"):
                 self.setColor(s)
+            elif(s[0] == "gamestart"):
+                self.gameStart()
             elif(s[0] == "position"):
                 self.position(s)
             elif(s[0] == "go"):
@@ -31,6 +33,9 @@ class OthelloEngine(ol.Field):
     def setColor(self,s):
         self.color = s[1]
         print("setcolor ok:" + self.color)
+
+    def gameStart(self):
+        print("gamestart ok")
 
     def position(self,s):
         self.setFieldArray(s[1])

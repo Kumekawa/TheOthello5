@@ -1,0 +1,1 @@
+pythonでSOPを満たしたものを作る場合、engineBaseを継承し、def go(self):を記述するだけで戦えます。
